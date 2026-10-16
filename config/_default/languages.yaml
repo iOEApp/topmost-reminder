@@ -2,21 +2,227 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
+# ── Default language ────────────────────────────────────────────────────────
 en:
   locale: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  label: English
+  title: 'Topmost Reminder'
+  weight: 1
+  contentDir: content/en
+  params:
+    hugoblox:
+      identity:
+        name: 'Topmost Reminder'
+        description: 'Topmost Reminder is a timer app with four modes — Timer,
+          Countdown, Stopwatch and Alarm. Create groups to organize timer
+          projects, and pin every timer on top of your screen so you never
+          miss an alert.'
+      footer:
+        text: 'Timers that stay on top of your screen.'
+  menu:
+    main:
+      - name: Overview
+        url: /en/#introduce
+        weight: 10
+      - name: Screenshots
+        url: /en/#screenshots
+        weight: 20
+      - name: Features
+        url: /en/#features
+        weight: 30
+      - name: Details
+        url: /en/#details
+        weight: 40
+      - name: Versions
+        url: /en/#versions
+        weight: 50
+      - name: Contact
+        url: /en/#contact
+        weight: 60
+    footer:
+      - name: Product
+        weight: 10
+      - parent: Product
+        name: Overview
+        url: /en/#introduce
+        weight: 10
+      - parent: Product
+        name: Features
+        url: /en/#features
+        weight: 20
+      - parent: Product
+        name: Details
+        url: /en/#details
+        weight: 30
+      - parent: Product
+        name: Versions
+        url: /en/#versions
+        weight: 40
+      - name: Support
+        weight: 20
+      - parent: Support
+        name: Help documentation
+        url: /en/help/
+        weight: 10
+      - parent: Support
+        name: Contact us
+        url: mailto:oeapp@outlook.com
+        weight: 20
+      - name: Legal
+        weight: 30
+      - parent: Legal
+        name: Privacy Policy
+        url: /en/privacy/
+        weight: 10
+      - parent: Legal
+        name: Terms of Service
+        url: /en/terms/
+        weight: 20
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  locale: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# ── Simplified Chinese ──────────────────────────────────────────────────────
+zh-hans:
+  locale: zh-Hans
+  label: 简体中文
+  title: '置顶计时器'
+  weight: 2
+  contentDir: content/zh-hans
+  params:
+    hugoblox:
+      identity:
+        name: '置顶计时器'
+        description: '置顶计时器集合计时器、倒计时、秒表、闹钟四种类型，支持分组管理与多任务同步计时，所有计时器均可置顶显示，重要提醒绝不错过。'
+      footer:
+        text: '把计时器钉在屏幕最前面。'
+  menu:
+    main:
+      - name: 软件简介
+        url: /zh-hans/#introduce
+        weight: 10
+      - name: 屏幕截图
+        url: /zh-hans/#screenshots
+        weight: 20
+      - name: 主要功能
+        url: /zh-hans/#features
+        weight: 30
+      - name: 功能详解
+        url: /zh-hans/#details
+        weight: 40
+      - name: 版本区别
+        url: /zh-hans/#versions
+        weight: 50
+      - name: 联系我们
+        url: /zh-hans/#contact
+        weight: 60
+    footer:
+      - name: 产品
+        weight: 10
+      - parent: 产品
+        name: 软件简介
+        url: /zh-hans/#introduce
+        weight: 10
+      - parent: 产品
+        name: 主要功能
+        url: /zh-hans/#features
+        weight: 20
+      - parent: 产品
+        name: 功能详解
+        url: /zh-hans/#details
+        weight: 30
+      - parent: 产品
+        name: 版本区别
+        url: /zh-hans/#versions
+        weight: 40
+      - name: 支持
+        weight: 20
+      - parent: 支持
+        name: 帮助文档
+        url: /zh-hans/help/
+        weight: 10
+      - parent: 支持
+        name: 联系我们
+        url: mailto:oeapp@outlook.com
+        weight: 20
+      - name: 法律
+        weight: 30
+      - parent: 法律
+        name: 隐私政策
+        url: /zh-hans/privacy/
+        weight: 10
+      - parent: 法律
+        name: 服务条款
+        url: /zh-hans/terms/
+        weight: 20
+
+# ── Traditional Chinese ─────────────────────────────────────────────────────
+zh-hant:
+  locale: zh-Hant
+  label: 繁體中文
+  title: '置頂計時器'
+  weight: 3
+  contentDir: content/zh-hant
+  params:
+    hugoblox:
+      identity:
+        name: '置頂計時器'
+        description: '置頂計時器集合計時器、倒數計時器、碼錶、鬧鐘四種類型，支援分組管理與多任務同步計時，所有計時器均可置頂顯示，重要提醒絕不錯過。'
+      footer:
+        text: '將計時器釘在畫面最上層。'
+  menu:
+    main:
+      - name: 軟件簡介
+        url: /zh-hant/#introduce
+        weight: 10
+      - name: 屏幕截圖
+        url: /zh-hant/#screenshots
+        weight: 20
+      - name: 主要功能
+        url: /zh-hant/#features
+        weight: 30
+      - name: 功能詳解
+        url: /zh-hant/#details
+        weight: 40
+      - name: 版本區別
+        url: /zh-hant/#versions
+        weight: 50
+      - name: 聯繫我們
+        url: /zh-hant/#contact
+        weight: 60
+    footer:
+      - name: 產品
+        weight: 10
+      - parent: 產品
+        name: 軟件簡介
+        url: /zh-hant/#introduce
+        weight: 10
+      - parent: 產品
+        name: 主要功能
+        url: /zh-hant/#features
+        weight: 20
+      - parent: 產品
+        name: 功能詳解
+        url: /zh-hant/#details
+        weight: 30
+      - parent: 產品
+        name: 版本區別
+        url: /zh-hant/#versions
+        weight: 40
+      - name: 支持
+        weight: 20
+      - parent: 支持
+        name: 幫助文檔
+        url: /zh-hant/help/
+        weight: 10
+      - parent: 支持
+        name: 聯繫我們
+        url: mailto:oeapp@outlook.com
+        weight: 20
+      - name: 法律
+        weight: 30
+      - parent: 法律
+        name: 隱私政策
+        url: /zh-hant/privacy/
+        weight: 10
+      - parent: 法律
+        name: 服務條款
+        url: /zh-hant/terms/
+        weight: 20
